@@ -103,7 +103,7 @@ afterEvaluate {
                 artifact("$buildDir/outputs/aar/${artifactId}-release.aar")
                 groupId = 'com.github.AuroScholar'
                 artifactId = 'project_inclusion_sdk'
-                version = '2.2.51'
+                version = '2.2.52'
             }
         }
     }

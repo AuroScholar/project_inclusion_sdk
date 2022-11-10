@@ -215,12 +215,7 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/tvDespTitle"
-                app:readMoreMaxLines="2"
-                app:readMoreText="Read more"
-                app:readMoreTextColor="#40B0F8"
-                app:readMoreTextSize="14sp"
-                app:readMoreTextStyle="bold" />
+                app:layout_constraintTop_toBottomOf="@id/tvDespTitle" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

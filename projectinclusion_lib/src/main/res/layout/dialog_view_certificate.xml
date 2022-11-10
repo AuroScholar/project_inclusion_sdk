@@ -18,8 +18,7 @@
         <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
             android:id="@+id/ivViewCertificate"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:zoomEnabled="true"/>
+            android:layout_height="match_parent" />
 
         <ImageView
             android:id="@+id/ivCloseDialog"

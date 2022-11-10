@@ -9,7 +9,5 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scrollbarStyle="outsideOverlay"
-        android:clipToPadding="false"
-        app:tsquare_orientation_horizontal="false"
-        />
+        android:clipToPadding="false" />
 </androidx.constraintlayout.widget.ConstraintLayout>
