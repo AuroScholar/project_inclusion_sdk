@@ -1,0 +1,346 @@
+<resources>
+
+    <string name="app_name">Project Inclusion</string>
+
+    <!--Activity App Language-->
+    <string name="language_choose">Choose your language</string>
+    <string name="lang_pref_string">Your language preference can be changes \n at any time in settings</string>
+    <string name="welcome_txt">Welcome</string>
+
+    <!--Activity Choose Profile-->
+    <string name="please_select_txt">Please Select Your Profile</string>
+
+    <!-- Activity LMS Certificate-->
+    <string name="lms_certificate">LMS Certificate</string>
+
+    <!-- Activity Certificates List-->
+    <string name="btn_view">View</string>
+    <string name="btn_download">Download</string>
+
+    <!-- Activity OTP Verification-->
+    <string name="otp_verification">OTP Verification</string>
+    <string name="verification_msg">We have sent a verification code to</string>
+    <string name="resend_sms">Resend OTP</string>
+    <string name="call_txt">Call me</string>
+    <string name="resend_otp">Resend otp in :</string>
+
+    <!-- Activity Profile Verification-->
+    <string name="enter_current_password">Enter your current password</string>
+    <string name="old_pass_txt">Old password</string>
+    <string name="confirm_pass_txt">Confirm password</string>
+    <string name="new_password_txt">New password</string>
+    <string name="enter_a_new_password">Enter a new password</string>
+    <string name="confirm_new_password">Confirm new password</string>
+
+    <!-- Fragment Certificate-->
+    <string name="screening_certificates">Screening Certificates</string>
+    <string name="certificate">Certificate</string>
+
+    <!-- Fragment Courses-->
+    <string name="greeting_txt">Hello</string>
+    <string name="ongoing_courses">Ongoing Courses</string>
+    <string name="courses_available_for_you">Courses available for you</string>
+    <string name="search_courses">Search Courses</string>
+
+    <!-- Fragment Email-->
+    <string name="log_signup_txt">Login or Sign Up</string>
+    <string name="phone_or_username">Enter phone or username</string>
+
+    <!-- Fragment Password-->
+    <string name="enter_password_txt">Enter Password</string>
+    <string name="forget_pswd">Forgot Password ?</string>
+    <string name="click_here">Click Here</string>
+
+    <!-- Fragment Reset Password-->
+    <string name="reset_password">Reset Password</string>
+
+    <!-- Fragment Profile Detail-->
+    <string name="field_edit_profile">Edit Profile</string>
+    <string name="field_username">Username</string>
+    <string name="field_lname">Last Name</string>
+    <string name="field_dob">DOB</string>
+    <string name="field_fname">First Name</string>
+    <string name="field_gender">Gender</string>
+    <string name="field_phone_number">Phone Number</string>
+    <string name="field_filename">fileName</string>
+    <string name="field_whatsapp_number">Whatsapp Number</string>
+    <string name="field_email">Email ID</string>
+    <string name="field_state">State</string>
+    <string name="field_district">District</string>
+    <string name="hint_enter_your_fname">Enter your first name</string>
+    <string name="hint_enter_your_lname">Enter your last name</string>
+    <string name="hint_dob">Enter your Date Of Birth</string>
+    <string name="txt_same_as_your_mobile_number">Same as your mobile number</string>
+
+    <!-- Fragment Refer-->
+    <string name="txt_refer">Refer</string>
+    <string name="txt_refer_message">You haven\'t referred the app to anyone \n yet,tell other teacher about us</string>
+
+    <!-- Fragment user-->
+    <string name="txt_profile">Profile</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="language">Language</string>
+    <string name="change_password">Change password</string>
+    <string name="logout">Logout</string>
+
+    <!--COMMON-->
+    <string name="cont_text">Continue</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="age">Age</string>
+    <string name="higher_education">Higher Education</string>
+    <string name="experience">Experience in years</string>
+    <string name="udis">Udis</string>
+    <string name="ocuupation">Occupation</string>
+    <string name="designation">Designation</string>
+    <string name="district">District</string>
+    <string name="block">Block</string>
+    <string name="school_name">Name of School</string>
+    <string name="state_district_school">State and district of the school</string>
+    <string name="children_strength">Strength of Children in school</string>
+    <string name="teacher_strength">Strength of Teachers in school</string>
+    <string name="ndd">Number of students of NDD in school</string>
+    <string name="principal_name">Principal Name</string>
+    <string name="principal_phone_number">Principal phone number</string>
+
+    <string name="password_txt_frag">Enter Password</string>
+    <string name="password_header">Enter Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="create_accnt">Create Account</string>
+
+    <!-- FRAGMENT NAMES-->
+    <string name="fragment_user">Fragment User</string>
+    <string name="fragment_screening_result">Screening Result</string>
+    <string name="fragment_email">Fragment Email</string>
+    <string name="fragment_password">Fragment Password</string>
+    <string name="activity_otp_verification">Otp Verification</string>
+    <string name="fragment_profile_detail">Fragment Profile Detail</string>
+    <string name="fragment_lms_certificate_details">Fragment LMS Certificate Detail</string>
+    <string name="key_calling_fragment"> calling_fragment</string>
+    <string name="key_splash">splash_activity</string>
+
+    <!--Bundle Keys-->
+    <string name="key_course_img_url">img_url</string>
+    <string name="key_course_title">title</string>
+    <string name="key_course_sub_title">sub_title</string>
+    <string name="key_userTypeId">userTypeId</string>
+    <string name="key_lang_id">lang_id</string>
+    <string name="key_courseId_list">courseId_list</string>
+    <string name="key_lang_name">lang_name</string>
+    <string name="key_user_id">user_id</string>
+    <string name="key_user_token">user_token</string>
+    <string name="key_selected_webinar">selected_webinar</string>
+    <string name="key_profile">user_profile</string>
+    <string name="key_lang_hm">lang_hm</string>
+    <string name="key_profile_url">profile_url</string>
+    <string name="key_lang_list">lang_list</string>
+    <string name="key_phone_number">phone_number</string>
+    <string name="key_username">username</string>
+    <string name="key_fcm_token">fcm_token</string>
+    <string name="key_screening_messages">screening_messages</string>
+    <string name="key_ans_count">yes_no_count</string>
+    <string name="key_interventions">interventions</string>
+
+    <!--Third Party Keys InstaBug-->
+    <!--<string name="instabug_app_token">0f18cba903afc2aa790eda0fea6c9c02</string>-->
+    <string name="instabug_app_token">becaf78f16a4bac6bbc24bf49ef50dca</string>
+
+    <!--Certificate List Adapter Keys-->
+    <string name="module_cert_type">Module</string>
+    <string name="course_cert_type">Course</string>
+    <string name="excellence_cert_type">Excellence</string>
+    <string name="random_cert_type">Random</string>
+
+    <!--Menu-->
+    <string name="item_home">Home</string>
+    <string name="item_courses">Courses</string>
+
+    <!--Error Messages & Others-->
+    <string name="error_select_language">Please Select Language</string>
+    <string name="msg_otp_verified">Otp Verified Successfully</string>
+    <string name="error_internet_connection">Please Check your Internet Connection</string>
+    <string name="error_enter_otp">Enter OTP</string>
+    <string name="error_user_exists">User Already Registered</string>
+    <string name="error_old_password">Please enter your old password!</string>
+    <string name="error_new_password">Please enter a new password!</string>
+    <string name="error_reenter_new_password">Please confirm the new password!</string>
+    <string name="error_passwords_not_match">Your passwords do not match!</string>
+    <string name="msg_password_changed">Password Changed Successfully</string>
+    <string name="error_enter_name">Enter name</string>
+    <string name="error_enter_username">Enter username</string>
+    <string name="error_enter_password">Enter password</string>
+    <string name="error_valid_mobile_no">Enter Valid 10 Digit mobile number</string>
+    <string name="error_valid_username">Enter Valid Username</string>
+    <string name="error_existing_username">Enter Valid 10 Digit mobile number or an existing username!</string>
+    <string name="msg_certificate_saved">Certificate saved to gallery!</string>
+    <string name="perm_gallery">Write External Storage permission allows us to save files. Please allow this permission in App Settings.</string>
+
+
+    <!--Extra Keys-->
+    <string name="key_teacher">TEACHER</string>
+    <string name="key_parent">PARENT</string>
+    <string name="key_or">or</string>
+    <string name="key_hello">Hello</string>
+    <string name="key_sign_up">Sign Up</string>
+    <string name="signup_header">Please fill your following credentials</string>
+    <string name="password_txt">Password</string>
+    <string name="create_accnt_txt">create_accnt</string>
+    <string name="item_more">More</string>
+    <string name="missing_feature_txt">We don\'t have this feature available as of yet. Thank you!</string>
+    <string name="upload_profile_txt">Please upload profile image!</string>
+    <string name="error_loading_txt">Error Loading!</string>
+    <string name="incorrect_password_txt">Incorrect Password!\nPlease try again</string>
+    <string name="image_download_error_txt">Image could not be downloaded. Please try again!</string>
+    <string name="img_unavailable_txt">Image unavailable!</string>
+    <string name="existing_user_otp_txt">Only existing users can login with otp!</string>
+
+    <string name="error_first_name">Please enter your first name</string>
+    <string name="error_last_name">Please enter your last name</string>
+    <string name="error_dob">Please enter your date of birth</string>
+    <string name="error_phone_number">Please enter your phone number</string>
+    <string name="error_state">Please select your state</string>
+    <string name="no_cert_txt">Uh oh! You do not have any certificates to display!</string>
+
+    <string name="login_success_txt">Login Successful</string>
+    <string name="key_course">Course</string>
+    <string name="key_excellence">Excellence</string>
+    <string name="key_module">Module</string>
+
+    <string name="upload_pp_title">Upload profile image from </string>
+    <string name="gallery_txt">Gallery</string>
+    <string name="camera_txt">Camera</string>
+    <string name="pwd_validation_min_char">Minimum 6 characters are required!</string>
+    <string name="pwd_chng_success">Password changed!</string>
+    <string name="pwd_chng_fail">Password change failed!</string>
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_other">Other</string>
+
+    <string name="error_only_letters">Only letters are allowed</string>
+    <string name="error_email">Please enter a valid email address</string>
+    <string name="error_gender">Please select a gender</string>
+    <string name="error_space_first_name">First Name cannot start with a space</string>
+    <string name="error_space_last_name">Last Name cannot start with a space</string>
+    <string name="error_registered_mobile">Please enter your registered username while logging in with otp!</string>
+
+    <string name="item_settings">Settings</string>
+
+    <!-- Activity Screening-->
+    <string name="screening_test">Screening Test</string>
+    <string name="ques_no">Question No</string>
+    <string name="reset_btn">Reset</string>
+    <string name="submit_btn">Submit</string>
+
+    <!-- Fragment Screening Profile-->
+    <string name="screening_profile">Screening Profile</string>
+    <string name="screening">Screening</string>
+    <string name="hint_reenter_pass">Confirm password</string>
+
+    <!-- Fragment Screening Result-->
+    <string name="screening_result">Screening Result</string>
+    <string name="conclusion_txt">Conclusion: </string>
+    <string name="no_result_txt">No Result</string>
+    <string name="intervention_txt">Intervention: </string>
+    <string name="error_all_ques">Please select an answer for all questions!</string>
+
+    <string name="screening_sub_heading_txt">Welcome! Please fill in the details to proceed</string>
+    <string name="field_teacher_name">Teacher Name</string>
+    <string name="hint_teacher_name">Enter teacher name here</string>
+    <string name="field_student_name">Student Name</string>
+    <string name="hint_student_name">Enter student name here</string>
+    <string name="field_school">School</string>
+    <string name="hint_school">Enter school name here</string>
+    <string name="field_class">Class</string>
+    <string name="hint_class">Enter class here</string>
+    <string name="field_age">Age</string>
+    <string name="hint_age">Enter your age here</string>
+    <string name="field_residence">Residence</string>
+    <string name="hint_residence">Please select your residence</string>
+    <string name="field_duration_observation">Observation Duration</string>
+    <string name="hint_duration_observation">Please select the duration of observation</string>
+    <string name="error_blank_pass">Password cannot be blank spaces</string>
+    <string name="error_space_username">Username cannot start with a space</string>
+    <string name="error_length_username">Username must have at least 5 characters</string>
+    <string name="error_username_not_exists">This username does not exist! Please use your contact number to register or type a valid username!</string>
+
+    <string name="hint_gender">Please select your gender</string>
+    <string name="error_district">Please select your district</string>
+    <string name="next_txt">Next</string>
+
+    <!--Not Added Till Now-->
+    <string name="error_select_profile">Please Select Profile</string>
+    <string name="error_space_email">Email cannot start with a space</string>
+    <string name="webinars_txt">Webinars</string>
+    <string name="error_null_otp_response">The otp you have entered is incorrect!</string>
+    <string name="key_login_with_otp">Login with Otp</string>
+    <string name="save_profile_success_text">Referral for Project Inclusion</string>
+    <string name="refer_heading_txt">Your profile has been saved successfully!</string>
+    <string name="refer_content_txt">Hello! I happily invite you to try project inclusion. Please download and give this app a try!</string>
+
+    <!--Not Added Till Now-->
+
+    <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <string-array name="sectionA">
+        <item>Is the student able to see clearly using both eyes?</item>
+        <item>Does the student bump into objects or other students very frequently?</item>
+        <item>Does the student avoid engaging in activities requiring visual focus, such as colouring/drawing?</item>
+
+    </string-array>
+    <string-array name="sectionB">
+        <item>Does the student respond when addressed or called out?</item>
+        <item>Does the student use an unusually loud voice when speaking?</item>
+        <item>Does the student have problems hearing environmental sounds (school bell or people calling and talking to the student in social situations)?</item>
+    </string-array>
+
+    <string-array name="sectionC">
+        <item>Does the student have a problem in making eye contact?</item>
+        <item>Does the student respond verbally or non-verbally to their name being called?</item>
+        <item>Is the student able to locate the objects that you are pointing at?</item>
+        <item>Does the student pay attention to an object or event together with peers/teachers (looking at a toy together and playing with it while interacting through  words and gestures)?</item>
+        <item>Is the student able to follow simple commands, such as ‘Open the book.’ or ‘Hold the bottle.’?</item>
+        <item>Does the student exhibit ‘pretend play’ or ‘make-believe’ (pretend to drink from an empty cup, pretend to talk on a phone, or pretend to feed a doll or stuffed animal)? </item>
+        <item>Does the student wait for their turn to play in small groups and share toys/things with peers? </item>
+        <item>Is the student able to initiate and play with another student or group of the same age?</item>
+    </string-array>
+
+    <string-array name="sectionD">
+        <item>Is the student able to identify and name primary colours?</item>
+        <item>Is the student able to identify similarities and group objects together (foods in one group/clothes in one group)?</item>
+        <item>Does the student have spatial sense, like placing puzzle pieces and pegs correctly?</item>
+        <item>Is the student able to recite numbers in order from memory (rote counting)?</item>
+        <item>Does the student have a problem with knowing about commonly used everyday items (books, food, TV, fridge and phone)? (Examples should be - board, toys, bag, door, school)</item>
+        <item>Is the student able to name, compare and sort basic shapes?</item>
+        <item>Is the student able to place objects in the correct order (smallest to largest and largest to smallest)?</item>
+    </string-array>
+
+    <string-array name="sectionE">
+        <item>Is the student able to follow a daily routine and one-step instructions?</item>
+        <item>Are strangers able to understand much of what is said by the student?</item>
+        <item>Is the student able to describe the use of objects, such as ‘shoe’ or ‘car’?</item>
+        <item>Is the student able to use short sentences to express needs and a few thoughts (‘I am hungry.’, ‘Give me the toy.’ or ‘This is my house.’)?</item>
+        <item>Does the student ask ‘what’, ‘where’ and ‘who’ questions (‘Where is papa?’, ‘What is this?’ and ‘Who is she?’)?</item>
+        <item>Is the student able to use the basic pronouns: I, me, mine, you, yours, he and she?</item>
+        <item>Does the student echo or repeat words without understanding them (on being asked ‘What is this?’ repeats ‘What is this?’, instead of telling what the object is)?</item>
+    </string-array>
+
+    <string-array name="sectionF">
+        <item>Is the student able to pick up pieces of food (using fork, spoon or hand Fingers) ?</item>
+        <item>Is the student able to drink from a cup with a straw without excessive dribbling?</item>
+        <item>Is the student able to throw and attempt to catch a ball without losing balance?</item>
+        <item>Is the student able to coordinate both hands to play (swinging a bat or opening a bottle)?</item>
+        <item>Is the student able to coordinate hand and finger movement needed to participate in table top games and activities?</item>
+    </string-array>
+
+    <string-array name="sectionG">
+        <item>Does the student walk primarily on toes and not with the usual heel-toe pattern?</item>
+        <item>Is the student able to use appropriate force when playing with peers or pets or when holding objects?</item>
+        <item>Is the student excessively disturbed by loud noises or has problems with normal environmental sounds (school bell, ticking of the clock, fan, etc.)?</item>
+        <item>Is the student unaware and does not notice or cry when they are hurt?</item>
+        <item>Is the student able to enjoy and bear communication through gestures, like hand holding, pat on the shoulder, handshakes and hugs?</item>
+        <item>Does the student frequently exhibit repetitive actions, like hand flapping, finger movement, rocking back and forth, and vocal repetitions? </item>
+    </string-array>
+</resources>

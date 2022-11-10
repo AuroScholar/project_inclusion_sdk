@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clSLot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="20dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="20dp"
+    android:background="@drawable/background_item_lang_webinar_selected"
+    android:backgroundTint="#D4D9E7"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+
+
+    <TextView
+        android:id="@+id/tvSlotName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="2:00 pm - 4:00 pm"
+        android:fontFamily="@font/metropolismedium"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivRadioBg"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:src="@drawable/skyblue_circle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/ivSelectedRadio"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/skyblue_circle"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/ivRadioBg"
+        app:layout_constraintEnd_toEndOf="@id/ivRadioBg"
+        app:layout_constraintStart_toStartOf="@id/ivRadioBg"
+        app:layout_constraintTop_toTopOf="@id/ivRadioBg" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/ivRadioBtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:clickable="false"
+        style="@style/MyCheckBox"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.pi.projectinclusion.auth.AuthViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color"
+        android:elevation="0dp"
+        tools:context=".activity.LmsCertificateActivity">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvBackCert"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="@dimen/margin_top"
+            android:backgroundTint="@color/white"
+            android:elevation="0dp"
+            android:orientation="horizontal"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ivBackCert"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:padding="3dp"
+                android:src="@drawable/ic_path_25"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvCertHeading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/metropolis_semibold"
+            android:text="@string/lms_certificate"
+            android:textColor="@color/profile_color"
+            android:textSize="@dimen/heading_size"
+            app:layout_constraintBottom_toBottomOf="@id/cvBackCert"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/cvBackCert" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCertTypes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintTop_toBottomOf="@id/tvCertHeading"
+
+            tools:listitem="@layout/item_certificate_type" />
+
+        <!--        <HorizontalScrollView-->
+        <!--            android:id="@+id/hsvCertButtons"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="30dp"-->
+        <!--            android:fillViewport="true"-->
+        <!--            android:visibility="gone"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/tvCertHeading">-->
+
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:weightSum="99">-->
+
+        <!--                <androidx.appcompat.widget.AppCompatButton-->
+        <!--                    android:id="@+id/acbModule"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="40dp"-->
+        <!--                    android:layout_marginStart="20dp"-->
+        <!--                    android:layout_weight="33"-->
+        <!--                    android:background="@drawable/rounded_tab_background_selected"-->
+        <!--                    android:text="Module"-->
+        <!--                    android:textAllCaps="false"-->
+        <!--                    android:textColor="@color/white"-->
+        <!--                    app:layout_constraintEnd_toStartOf="@id/acbCourses"-->
+        <!--                    app:layout_constraintHorizontal_chainStyle="spread"-->
+        <!--                    app:layout_constraintStart_toStartOf="parent"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/tvCertHeading" />-->
+
+        <!--                <androidx.appcompat.widget.AppCompatButton-->
+        <!--                    android:id="@+id/acbCourses"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="40dp"-->
+        <!--                    android:layout_marginStart="20dp"-->
+        <!--                    android:layout_marginEnd="20dp"-->
+        <!--                    android:layout_weight="33"-->
+        <!--                    android:background="@drawable/rounded_tab_background"-->
+        <!--                    android:text="Courses"-->
+        <!--                    android:textAllCaps="false"-->
+        <!--                    app:layout_constraintEnd_toStartOf="@id/acbExcellence"-->
+        <!--                    app:layout_constraintHorizontal_chainStyle="spread"-->
+        <!--                    app:layout_constraintStart_toEndOf="@id/acbModule"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/tvCertHeading" />-->
+
+        <!--                <androidx.appcompat.widget.AppCompatButton-->
+        <!--                    android:id="@+id/acbExcellence"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="40dp"-->
+        <!--                    android:layout_marginEnd="20dp"-->
+        <!--                    android:layout_weight="33"-->
+        <!--                    android:background="@drawable/rounded_tab_background"-->
+        <!--                    android:text="Excellence"-->
+        <!--                    android:textAllCaps="false"-->
+        <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+        <!--                    app:layout_constraintHorizontal_chainStyle="spread"-->
+        <!--                    app:layout_constraintStart_toEndOf="@id/acbCourses"-->
+        <!--                    app:layout_constraintTop_toBottomOf="@id/tvCertHeading" />-->
+
+
+        <!--            </LinearLayout>-->
+
+
+        <!--        </HorizontalScrollView>-->
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clNoCert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvCertTypes">
+
+            <TextView
+                android:id="@+id/tvNoCert"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/metropolis_semibold"
+                android:text="@string/no_cert_txt"
+                android:textAlignment="center"
+                android:textColor="@color/profile_color"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvCertificates"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvCertTypes"
+            tools:listitem="@layout/item_certificates_list" />
+
+
+        <ProgressBar
+            android:id="@+id/pbCertificate"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

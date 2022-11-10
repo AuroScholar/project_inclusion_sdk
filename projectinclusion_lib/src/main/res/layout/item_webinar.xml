@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvSR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="7dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvImageWebinar"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <ImageView
+                    android:id="@+id/ivWebinarImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/course_temp" />
+
+                <TextView
+                    android:id="@+id/tvSubjectName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#99000000"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:padding="5dp"
+                    android:text="Dyslexia"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/metropolismedium"
+            android:text="3rd Oct"
+            android:textColor="#3C9E47"
+            android:textSize="14sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvHostedBy"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_tab_background"
+            android:backgroundTint="#E0E2EC"
+            android:fontFamily="@font/metropolis_light"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="5dp"
+            android:paddingBottom="5dp"
+            android:text="Hosted By Project Inclusion"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvImageWebinar"
+            app:layout_constraintTop_toBottomOf="@id/tvDate"
+
+            />
+
+        <com.instabug.library.ui.custom.CircularImageView
+            android:id="@+id/civHostImage"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:src="@drawable/man_img"
+            app:layout_constraintBottom_toBottomOf="@id/tvHostedBy"
+            app:layout_constraintStart_toEndOf="@id/cvImageWebinar"
+            app:layout_constraintTop_toTopOf="@id/tvHostedBy" />
+
+
+        <TextView
+            android:id="@+id/tvWebinarName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:text="National Health Movement of India"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvImageWebinar"
+            app:layout_constraintTop_toBottomOf="@id/tvHostedBy" />
+
+        <ImageView
+            android:id="@+id/ivCalendarIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_calendar_new"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/cvImageWebinar"
+            app:layout_constraintTop_toBottomOf="@id/tvWebinarName"
+            app:tint="#3C9E47" />
+
+        <TextView
+            android:id="@+id/tvSlotTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:text="Slot Available"
+            android:textColor="#000000"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendarIcon"
+            app:layout_constraintStart_toEndOf="@id/ivCalendarIcon"
+            app:layout_constraintTop_toTopOf="@id/ivCalendarIcon" />
+
+        <TextView
+            android:id="@+id/tvSlotNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/rounded_menu_bg"
+            android:backgroundTint="#3C9E47"
+            android:fontFamily="@font/metropolis_regular"
+            android:gravity="center"
+            android:paddingStart="15dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:text="120"
+            android:textAlignment="gravity"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendarIcon"
+            app:layout_constraintStart_toEndOf="@id/tvSlotTitle"
+            app:layout_constraintTop_toTopOf="@id/ivCalendarIcon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

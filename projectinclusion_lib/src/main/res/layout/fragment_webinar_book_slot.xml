@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.pi.projectinclusion.auth.AuthViewModel" />
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clWebinarTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_webinar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvHeadingBook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text="Reserve Your Seat"
+                android:textColor="@color/white"
+                android:textSize="@dimen/heading_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageView
+                android:id="@+id/ivBackBook"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/bg_back_book_webinar"
+                android:elevation="5dp"
+                android:padding="9dp"
+                android:src="@drawable/ic_path_25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:tint="#40B0F8" />
+
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/skyblue_circle"
+                android:backgroundTint="#112475"
+                android:translationX="-50dp"
+                android:translationY="-50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/skyblue_circle"
+                android:backgroundTint="#112475"
+                android:translationX="30dp"
+                android:translationY="-30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cvImageWebinar"
+                android:layout_width="110dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="15dp"
+                app:layout_constraintBottom_toTopOf="@id/tvDespTitle"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvHeadingBook">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/ivWebinarImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/course_temp" />
+
+                    <TextView
+                        android:id="@+id/tvSubjectName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#99000000"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:padding="5dp"
+                        android:text="Dyslexia"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="14sp"
+
+                        app:layout_constraintBottom_toBottomOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvWebinarName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/metropolis_regular"
+                android:paddingStart="5dp"
+                android:paddingEnd="10dp"
+                android:text="National Health Movement of India"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/cvImageWebinar"
+                app:layout_constraintTop_toBottomOf="@id/ivBackBook" />
+
+            <TextView
+                android:id="@+id/tvLanguageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/metropolis_light"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Language: "
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@id/tvLanguageBox"
+                app:layout_constraintStart_toEndOf="@id/cvImageWebinar"
+                app:layout_constraintTop_toTopOf="@id/tvLanguageBox" />
+
+            <TextView
+                android:id="@+id/tvLanguageBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/white_stroke_rounded_bg"
+                android:fontFamily="@font/metropolis_light"
+                android:paddingStart="20dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="20dp"
+                android:paddingBottom="10dp"
+                android:text="English"
+
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintStart_toEndOf="@id/tvLanguageTitle"
+                app:layout_constraintTop_toBottomOf="@id/tvWebinarName" />
+
+            <View
+                android:id="@+id/vBottom"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="150dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLanguageBox" />
+
+            <TextView
+                android:id="@+id/tvDespTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/metropolismedium"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Description "
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvLanguageBox" />
+
+            <com.webtoonscorp.android.readmore.ReadMoreTextView
+                android:id="@+id/rmtvDesp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="80dp"
+                android:fontFamily="@font/metropolis_regular"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="Lorem Ipsum is simply dummy fdsonfsdngod gdsg dsiogdiosgndio gdgndiog idsgsdig dg dgndiogniod gniodng dgn diogniodsngiodsng dign iodgno text of the printing and  sahif fofhdsnfd osfdfsiodfh typesetting industry. Lorem Ips everjoo "
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvDespTitle"
+                app:readMoreMaxLines="2"
+                app:readMoreText="Read more"
+                app:readMoreTextColor="#40B0F8"
+                app:readMoreTextSize="14sp"
+                app:readMoreTextStyle="bold" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/vBarrierWebinar"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/clWebinarTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vBarrierWebinar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/ivCalendarIcon"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="30dp"
+                    android:src="@drawable/ic_calendar_new"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:tint="#3C9E47" />
+
+                <TextView
+                    android:id="@+id/tvTitleSLot1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:fontFamily="@font/metropolis_light"
+                    android:text="Slots Available"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toEndOf="@id/ivCalendarIcon"
+                    app:layout_constraintTop_toTopOf="parent"/>
+
+                <TextView
+                    android:id="@+id/tvSlotNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/rounded_menu_bg"
+                    android:backgroundTint="#3C9E47"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:gravity="center"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="15dp"
+                    android:paddingBottom="5dp"
+                    android:text="120"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@id/ivCalendarIcon"
+                    app:layout_constraintStart_toEndOf="@id/tvTitleSLot1"
+                    app:layout_constraintTop_toTopOf="@id/ivCalendarIcon" />
+
+                <TextView
+                    android:id="@+id/tvTitleSLot2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="@font/metropolismedium"
+                    android:text="Available Slot Timing"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvSlotNumber" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSlots"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintBottom_toTopOf="@id/acbBookNow"
+                    app:layout_constraintTop_toBottomOf="@id/tvTitleSLot2"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/item_slots" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clNoSlot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rvSlots">
+
+                    <TextView
+                        android:id="@+id/tvNoSlot"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:text="Sorry! We do not have any slots for this webinar!"
+                        android:textAlignment="center"
+                        android:textColor="@color/profile_color"
+                        android:textSize="18sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <ProgressBar
+                    android:id="@+id/pbSlots"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    app:layout_constraintBottom_toBottomOf="@id/rvSlots"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/rvSlots" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/acbBookNow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_book_button_disabled"
+                    android:fontFamily="@font/metropolis_regular"
+                    android:text="Book Now"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    app:layout_constraintTop_toBottomOf="@id/rvSlots"
+                    app:layout_constraintBottom_toBottomOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

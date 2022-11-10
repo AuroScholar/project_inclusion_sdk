@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.pi.projectinclusion.auth.AuthViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/field_margins"
+        android:layout_marginRight="@dimen/field_margins"
+        android:orientation="vertical"
+        tools:context=".activity.LoginActivity">
+
+        <ProgressBar
+            android:id="@+id/email_progress"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvContinue"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/select_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:text="@string/log_signup_txt"
+            android:textColor="@color/black"
+            android:textSize="@dimen/heading_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/LLCountry"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_edittext"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/select_text">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/ic_flag" />
+
+            <!--                <Spinner-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="40dp"-->
+            <!--                    android:layout_gravity="center_vertical"-->
+            <!--                    android:layout_marginStart="7dp" />-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLoginDetails"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight=".7"
+            android:background="@drawable/background_edittext"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="@id/LLCountry"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/LLCountry"
+            app:layout_constraintTop_toTopOf="@id/LLCountry">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/metropolis_regular"
+                android:text="+91"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/etLoginUsername"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:hint="@string/phone_or_username"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:singleLine="true"
+                android:textIsSelectable="false"
+                android:selectAllOnFocus="false"
+                android:text="@={viewmodel.emailLogin}"
+                android:textColorHint="@color/border_background_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="20dp"
+            android:elevation="7dp"
+            app:cardCornerRadius="10dp"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintTop_toBottomOf="@id/llLoginDetails">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/login_phone_button"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/button_background">
+
+                <TextView
+                    android:id="@+id/log_bttn_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/metropolis_light"
+                    android:text="@string/cont_text"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/button_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/circular_over_button"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/vLeft"
+            android:layout_width="0dp"
+            android:layout_height="1.2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_weight=".45"
+            android:background="@color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/g50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvContinue" />
+
+        <TextView
+            android:id="@+id/tvOr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_weight=".1"
+            android:text="@string/key_or"
+            android:textAlignment="center"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/vRight"
+            app:layout_constraintStart_toEndOf="@id/vLeft"
+            app:layout_constraintTop_toBottomOf="@id/cvContinue" />
+
+        <View
+            android:id="@+id/vRight"
+            android:layout_width="0dp"
+            android:layout_height="1.2dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight=".45"
+            android:background="@color/black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/g50"
+            app:layout_constraintTop_toBottomOf="@id/cvContinue" />
+
+        <TextView
+            android:id="@+id/tvLoginWithOtp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:text="@string/key_login_with_otp"
+            android:textColor="#4182FF"
+            android:textSize="20sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vRight" />
+
+        <ImageView
+            android:id="@+id/ivGoogle"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/language_background"
+            android:padding="10dp"
+            android:src="@drawable/google"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/g50"
+            app:layout_constraintTop_toBottomOf="@id/tvOr" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/g50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <ImageView
+            android:id="@+id/ivEmail"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/language_background"
+            android:padding="10dp"
+            android:src="@drawable/ic_email"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/g50"
+            app:layout_constraintTop_toBottomOf="@id/tvOr" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvSR"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="7dp"
+    android:orientation="vertical"
+    android:padding="5dp"
+    app:cardCornerRadius="10dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tvSlotNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_bl_tr_15dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:paddingStart="15dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="5dp"
+            android:text="Slot left\n110"
+            android:textAlignment="gravity"
+            android:textColor="#000104"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvHostedBy"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_tab_background"
+            android:backgroundTint="#E0E2EC"
+            android:fontFamily="@font/metropolis_light"
+            android:gravity="center"
+            android:paddingStart="30dp"
+            android:paddingEnd="10dp"
+            android:text="Hosted By Project Inclusion"
+            android:textAlignment="gravity"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/civHostImage"
+            app:layout_constraintStart_toStartOf="@id/civHostImage"
+            app:layout_constraintTop_toTopOf="@id/civHostImage"
+
+            />
+
+        <com.instabug.library.ui.custom.CircularImageView
+            android:id="@+id/civHostImage"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/man_img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvWebinarName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/metropolis_semibold"
+            android:lineSpacingExtra="5dp"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:text="National Health Movement of India"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@id/tvSlotNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvHostedBy" />
+
+        <ImageView
+            android:id="@+id/ivCalendarIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_calendar_new"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvWebinarName"
+            app:tint="#FFA600" />
+
+        <TextView
+            android:id="@+id/tvSlotTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:paddingStart="5dp"
+            android:paddingEnd="10dp"
+            android:text="Mon, 11 July 2022"
+            android:textColor="#787E99"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendarIcon"
+            app:layout_constraintStart_toEndOf="@id/ivCalendarIcon"
+            app:layout_constraintTop_toTopOf="@id/ivCalendarIcon" />
+
+
+        <ImageView
+            android:id="@+id/ivTimeIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="5dp"
+            android:src="@drawable/ic_clock"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/tvDate"
+            app:layout_constraintTop_toBottomOf="@id/tvWebinarName"
+            app:tint="#FFA600" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="15dp"
+            android:fontFamily="@font/metropolis_regular"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:text="4:00 pm - 6:00 pm"
+            android:textColor="#787E99"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/ivCalendarIcon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/ivCalendarIcon" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

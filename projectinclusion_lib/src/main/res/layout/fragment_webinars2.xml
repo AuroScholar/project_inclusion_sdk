@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    >
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.pi.projectinclusion.auth.AuthViewModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_color">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clWebinarTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_bg_webinar"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvWebinarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_top"
+                android:text="@string/webinars_txt"
+
+                android:textColor="@color/white"
+                android:textSize="@dimen/heading_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/skyblue_circle"
+                android:backgroundTint="#112475"
+                android:translationX="-50dp"
+                android:translationY="-50dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/skyblue_circle"
+                android:backgroundTint="#112475"
+                android:translationX="30dp"
+                android:translationY="-30dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="30dp"
+                app:cardElevation="5dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvWebinarTitle">
+
+                <androidx.constraintlayout.motion.widget.MotionLayout
+                    android:id="@+id/mlTabWebinar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layoutDescription="@xml/fragment_webinars2_scene">
+
+                    <ImageView
+                        android:id="@+id/ivTabBg"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:src="@drawable/background_edittext"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/g50"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:tint="#FFA600" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/g50"
+                        android:layout_width="1dp"
+                        android:layout_height="1dp"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.5" />
+
+
+                    <TextView
+                        android:id="@+id/tvUpcoming"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/metropolis_semibold"
+                        android:gravity="center"
+                        android:text="Upcoming"
+                        android:textAlignment="gravity"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/g50"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/tvBooked"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/metropolis_regular"
+                        android:gravity="center"
+                        android:text="Booked"
+                        android:textAlignment="gravity"
+                        android:textColor="#6E6E6E"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/g50"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.motion.widget.MotionLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <View
+            android:id="@+id/vBarrierWebinar"
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:layout_marginBottom="40dp"
+            app:layout_constraintBottom_toBottomOf="@id/clWebinarTop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvWebinars"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/clWebinarTop"
+            tools:itemCount="5"
+            tools:listitem="@layout/item_webinar2" />
+
+        <FrameLayout
+            android:id="@+id/flBookSlot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_color"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
